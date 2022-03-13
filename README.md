@@ -25,6 +25,20 @@ ATTR_DICT = {
 
 where `"example"` is the dataset name, `['category', 'brand']` is the list of to-impute categorical attributes names.
 
+In our experiments, the to-impute attributes are as follows:
+```
+ATTR_DICT = {
+    "walmart":["category", "brand"],
+    "amazon":["category", "brand"],
+    "restaurant":["city"],
+    "buy":["manufacturer"],
+    "housing":["region", "price", "sqfeet", "beds", "baths", "laundry_options", "parking_options", "lat", "long", "state"],
+    "phone":["brand"],
+    "zomato":["location"],
+    "flipkart":["brand"]
+}
+```
+
 To use IPM-Multi in the paper, run this command:
 
 ```
